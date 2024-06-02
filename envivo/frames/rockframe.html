@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+        <title>Gestión de Eventos</title>
+        <link rel="stylesheet" href="../../css/arte.css" />
+    </head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .scroll-button2 {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .scroll-button i {
+            margin-top: 50%;
+        }
+    </style>
+    <body>
+        <div class="container" >
+            <div class="featured-wrapper">
+                <div class="featured-list">
+                    <figure>
+                        <img src="images/rockframe.jpg" alt="">
+                        <h1 class="slideshow-title">ROCK</h1>
+                        <div class="overlay-text">Inicio/En Vivo/Rock</div>
+                    </figure>
+                </div>
+            </div>
+            <h2 style="margin-left: 2%; margin-top: 1%;color: #707070">Rock</h2>
+            <div class="container-wrapper">
+                <div class="container-boxes">
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/rock2.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Arctic Monkeys</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Foro Sol, Viad. Río de la Piedad S/N, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="../../images/badomens.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bxs-heart"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Bad Omens y Poppy en el Hell & Heaven Bar</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Estrasburgo, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div class="button-container">
+                                    <a href="../../formframe.html" class="custom-button">BOLETOS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/rock3.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Bring Me The Horizon</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Pepsi Center WTC, Dakota, Nápoles, Benito Juárez, 03810 Ciudad de México, CDMX.<br>ㅤ</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="../../images/chase.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>CHASE ATLANTIC LIVE_IN MEXICO</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Pabellón Oeste del Palacio de los Deportes, Añil 467, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="../../images/eva.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Evanescence</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Teatro Metropólitan, Av. Independencia 90, Colonia Centro, Centro, Cuauhtémoc, 06050 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div style="margin-top:-22%" class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="../../images/maggie.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Maggie Lindemann SUCKERPUNCH</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Foro Sol, Viad. Río de la Piedad S/N, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="../../images/maneskin.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Måneskin en Tecate Emblema</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Autódromo Hermanos Rodríguez, Viad. Río de la Piedad S/n, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="../../images/paramore.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Paramore</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Autódromo Hermanos Rodríguez, Viad. Río de la Piedad S/n, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/pop5.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Set It Off</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Foro Viena, Centenario 151, Del Carmen, Coyoacán, 04100 Ciudad de México, CDMX.<br>ㅤ</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/pop6.webp" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>The Neighbourhood MIDDLE OF SOMEWHERE</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Pepsi Center WTC, Dakota, Nápoles, Benito Juárez, 03810 Ciudad de México, CDMX.</p>
+                                </div>
+                                <div class="button-container"> <!-- Contenedor adicional para el botón -->
+                                    <button class="custom-button">BOLETOS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-button2" onclick="scrollPage()"><i class='bx bxs-chevron-down'></i></button>
+        </div>
+        <script>
+            document.querySelectorAll('.heart-button').forEach(button => {
+                button.addEventListener('click', function () {
+                    const emptyHeartIcon = this.querySelector('.bx-heart');
+                    const filledHeartIcon = this.querySelector('.bxs-heart');
+
+                    if (emptyHeartIcon.style.display === 'none') {
+                        emptyHeartIcon.style.display = 'block';
+                        filledHeartIcon.style.display = 'none';
+                    } else {
+                        emptyHeartIcon.style.display = 'none';
+                        filledHeartIcon.style.display = 'block';
+                    }
+                });
+            });
+        </script>
+        <script>
+            function toggleSubmenu(element) {
+                element.parentElement.classList.toggle('show_submenu');
+            }
+        </script>
+        <script>
+            let isDown = true;
+            function scrollPage() {
+                if (isDown) {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        behavior: 'smooth'
+                    });
+                    document.querySelector('.scroll-button2').innerHTML = "<i class='bx bxs-chevron-up'></i>";
+                } else {
+                    window.scrollBy({
+                        top: -window.innerHeight,
+                        behavior: 'smooth'
+                    });
+                    document.querySelector('.scroll-button2').innerHTML = "<i class='bx bxs-chevron-down'></i>";
+                }
+                isDown = !isDown;
+            }
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
