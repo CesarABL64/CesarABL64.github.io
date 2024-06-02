@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Boxicons CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+
+        <title>Gestión de Eventos</title>
+        <link rel="stylesheet" href="../css/arte.css" />
+    </head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .scroll-button2 {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .scroll-button i {
+            margin-top: 50%;
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            margin-left: 2%;
+            margin-top: 2%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+    <body>
+        <div class="container" >
+            <div class="profile">
+                <img src="../images/profile.png" alt="" />
+                <h2 style="margin-left: 15%; margin-top: -8%;color: #707070">Michelle Aura Saucedo</h2>
+                <div style="font-size: 15px;text-decoration: none;margin-left: 15%;cursor: text" class="text-box2">
+                    <p>Número telefónico, correo electrónico, domicilio, tipo de tarjeta y número de tarjeta.</p>
+                </div>
+            </div>
+            <h2 style="margin-left: 2%; margin-top: 5%;color: #707070">En Vivo</h2>
+            <div class="container-wrapper">
+                <div class="container-boxes">
+                    <div style="height: 125px" class="container_box">
+                        <div class="image-box">
+                            <img style="height: 125px;width: 160px" src="../images/badomens.jpg" alt="Imagen">
+                        </div>
+                        <div class="content-box">
+                            <div style="margin-left:30%" class="text-container"> <!-- Contenedor para el texto -->
+                                <div class="text-box">
+                                    <p>Bad Omens y Poppy en el Hell & Heaven Bar</p>
+                                </div>
+                                <div class="text-box2">
+                                    <p>Estrasburgo, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX.</p>
+                                </div>
+                                <a href="boleto.pdf" class="text-box2">
+                                    <div class="text-box2">
+                                        <p style="color:#004AAD">Ver boleto.</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-button2" onclick="scrollPage()"><i class='bx bxs-chevron-down'></i></button>
+        </div>
+        <script>
+            function toggleSubmenu(element) {
+                element.parentElement.classList.toggle('show_submenu');
+            }
+        </script>
+        <script>
+            let isDown = true;
+            function scrollPage() {
+                if (isDown) {
+                    window.scrollBy({
+                        top: window.innerHeight,
+                        behavior: 'smooth'
+                    });
+                    document.querySelector('.scroll-button2').innerHTML = "<i class='bx bxs-chevron-up'></i>";
+                } else {
+                    window.scrollBy({
+                        top: -window.innerHeight,
+                        behavior: 'smooth'
+                    });
+                    document.querySelector('.scroll-button2').innerHTML = "<i class='bx bxs-chevron-down'></i>";
+                }
+                isDown = !isDown;
+            }
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
