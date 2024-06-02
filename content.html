@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+        <title>Gestión de Eventos</title>
+        <link rel="stylesheet" href="css/sidebar.css" />
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content-section">
+            <input type="radio" id="image1" name="image" checked>
+            <input type="radio" id="image2" name="image">
+            <input type="radio" id="image3" name="image">
+
+            <div class="container">
+                <div class="featured-wrapper">
+                    <ul class="featured-list">
+                        <li>
+                            <figure>
+                                <img src="images/badomens.jpg" alt="">
+                                <h1 class="slideshow-title">POPULARES</h1>
+                                <div class="overlay-text1">Bad Omens y Poppy en México</div>
+                                <div class="overlay-text">Bad Omens y Poppy en México<br>Hell & Heaven Bar | Estrasburgo, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX.</div>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/chase.jpg" alt="">
+                                <h1 class="slideshow-title">POPULARES</h1>
+                                <div class="overlay-text1">CHASE ATLANTIC en México_LIVE</div>
+                                <div class="overlay-text">CHASE ATLANTIC en México_LIVE<br>Granjas México Iztacalco S/N S/N, Granjas México, Iztacalco, C.P. 08400, Ciudad de México, CDMX.</div>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/glass.jpg" alt="">
+                                <h1 class="slideshow-title">POPULARES</h1>
+                                <div class="overlay-text1">Glass Animals en la Ciudad de México</div>
+                                <div class="overlay-text">Glass Animals en la Ciudad de México<br>Plaza Condesa, Av. Juan Escutia 4, Cuauhtémoc, Hipódromo Condesa, 06140 Ciudad de México, CDMX.</div>
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul class="arrows">
+                        <li>
+                            <label for="image1"></label>
+                        </li>
+                        <li>
+                            <label for="image2"></label>
+                        </li>
+                        <li>
+                            <label for="image3"></label>
+                        </li>
+                    </ul>
+                    <ul class="dots">
+                        <li>
+                            <label for="image1"></label>
+                        </li>
+                        <li>
+                            <label for="image2"></label>
+                        </li>
+                        <li>
+                            <label for="image3"></label>
+                        </li>
+                    </ul>
+                </div>
+                <h2 style="margin-left: 1.5%; margin-top: 2%;color: #707070">Recientes</h2>
+            </div>
+            <div class="container-wrapper">
+                <button class="scroll-button prev" style="display: none" onclick="scrollContainer(-1)">&#10094;</button>
+                <div class="container-boxes" onscroll="handleScroll()">
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/maggie.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-box">
+                                <p>Maggie Lindemann</p>
+                            </div>
+                            <div class="text-box2">
+                                <p>Foro Sol<br>Jueves 23 de mayo | 10:00 P.M - 12:00 A.M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/eva.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-box">
+                                <p>Evanescence</p>
+                            </div>
+                            <div class="text-box2">
+                                <p>Teatro Metropólitan<br>Viernes 31 de mayo | 9:00 P.M - 11:00 P.M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/maneskin.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-box">
+                                <p>Måneskin</p>
+                            </div>
+                            <div class="text-box2">
+                                <p>Palacio de los Deportes<br>Sábado 15 de junio | 11:00 P.M - 1:00 A.M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/marina.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-box">
+                                <p>MARINA</p>
+                            </div>
+                            <div class="text-box2">
+                                <p>Corona Capital<br>Martes 6 de agosto | 8:00 P.M - 10:00 P.M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_box">
+                        <div class="image-box">
+                            <img src="images/paramore.jpg" alt="Imagen">
+                            <div class="heart-icon">
+                                <button class="heart-button" aria-label="Marcar como favorito">
+                                    <i class="bx bx-heart"></i> <!-- Ícono del corazón vacío -->
+                                    <i class="bx bxs-heart" style="display: none;"></i> <!-- Ícono del corazón lleno, inicialmente oculto -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content-box">
+                            <div class="text-box">
+                                <p>Paramore</p>
+                            </div>
+                            <div class="text-box2">
+                                <p>Corona Capital<br>Miércoles 7 de agosto | 6:00 P.M - 8:00 P.M</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-button next" onclick="scrollContainer(1)">&#10095;</button>
+            </div>
+
+            <script>
+                function scrollContainer(direction) {
+                    const container = document.querySelector('.container-boxes');
+                    const scrollStep = 60; // Cambia este valor según la cantidad de desplazamiento deseada
+                    container.scrollLeft += direction * scrollStep;
+                    handleScroll();
+                }
+
+                function handleScroll() {
+                    const container = document.querySelector('.container-boxes');
+                    const prevButton = document.querySelector('.scroll-button.prev');
+
+                    // Si no está en el extremo izquierdo, muestra la flecha izquierda
+                    if (container.scrollLeft > 0) {
+                        prevButton.style.display = 'block';
+                    } else {
+                        prevButton.style.display = 'none';
+                    }
+                }
+                let scrollInterval;
+
+                document.querySelectorAll('.scroll-button').forEach(button => {
+                    button.addEventListener('mousedown', function () {
+                        const direction = this.classList.contains('prev') ? -1 : 1;
+                        scrollInterval = setInterval(() => {
+                            document.querySelector('.container-boxes').scrollBy({
+                                left: direction * 100,
+                                behavior: 'smooth'
+                            });
+                        }, 100); // Puedes ajustar la velocidad del desplazamiento cambiando este valor
+                    });
+
+                    button.addEventListener('mouseup', () => {
+                        clearInterval(scrollInterval);
+                    });
+
+                    button.addEventListener('mouseleave', () => {
+                        clearInterval(scrollInterval);
+                    });
+                });
+            </script>
+            <script>
+                document.querySelectorAll('.heart-button').forEach(button => {
+            button.addEventListener('click', function () {
+                const emptyHeartIcon = this.querySelector('.bx-heart');
+                const filledHeartIcon = this.querySelector('.bxs-heart');
+
+                if (emptyHeartIcon.style.display === 'none') {
+                    emptyHeartIcon.style.display = 'block';
+                    filledHeartIcon.style.display = 'none';
+                } else {
+                    emptyHeartIcon.style.display = 'none';
+                    filledHeartIcon.style.display = 'block';
+                }
+            });
+        });
+            </script>
+    </body>
+</html>
